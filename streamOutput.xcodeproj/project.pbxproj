@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		3400774C16E6E15A00097E8F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3400774B16E6E15A00097E8F /* Cocoa.framework */; };
 		3400775616E6E15A00097E8F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3400775416E6E15A00097E8F /* InfoPlist.strings */; };
+		3400776316E6E1E800097E8F /* streamOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 3400776216E6E1E800097E8F /* streamOutput.m */; };
+		3400776E16E6ED6F00097E8F /* FFMpegTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 3400776D16E6ED6F00097E8F /* FFMpegTask.m */; };
+		3400777216E70B3D00097E8F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3400777116E70B3D00097E8F /* libz.dylib */; };
+		3400777416E70B4400097E8F /* libbz2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3400777316E70B4400097E8F /* libbz2.dylib */; };
+		3400777616E70B5100097E8F /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3400777516E70B5100097E8F /* VideoToolbox.framework */; };
+		3400777816E70B9000097E8F /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3400777716E70B9000097E8F /* CoreMedia.framework */; };
+		3400777A16E70B9700097E8F /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3400777916E70B9700097E8F /* CoreVideo.framework */; };
+		3400777C16E70BB900097E8F /* VideoDecodeAcceleration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3400777B16E70BB900097E8F /* VideoDecodeAcceleration.framework */; };
+		34C363E816EB369A003CEFF1 /* streamOutput.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34C363E716EB369A003CEFF1 /* streamOutput.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +29,20 @@
 		3400775316E6E15A00097E8F /* streamOutput-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "streamOutput-Info.plist"; sourceTree = "<group>"; };
 		3400775516E6E15A00097E8F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3400775716E6E15A00097E8F /* streamOutput-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "streamOutput-Prefix.pch"; sourceTree = "<group>"; };
+		3400775E16E6E1B700097E8F /* CTUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTUtil.h; sourceTree = "<group>"; };
+		3400775F16E6E1B700097E8F /* CTContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTContext.h; sourceTree = "<group>"; };
+		3400776016E6E1B700097E8F /* CTEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTEffect.h; sourceTree = "<group>"; };
+		3400776116E6E1E800097E8F /* streamOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = streamOutput.h; sourceTree = SOURCE_ROOT; };
+		3400776216E6E1E800097E8F /* streamOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = streamOutput.m; sourceTree = SOURCE_ROOT; };
+		3400776C16E6ED6F00097E8F /* FFMpegTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFMpegTask.h; sourceTree = "<group>"; };
+		3400776D16E6ED6F00097E8F /* FFMpegTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFMpegTask.m; sourceTree = "<group>"; };
+		3400777116E70B3D00097E8F /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		3400777316E70B4400097E8F /* libbz2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbz2.dylib; path = usr/lib/libbz2.dylib; sourceTree = SDKROOT; };
+		3400777516E70B5100097E8F /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		3400777716E70B9000097E8F /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		3400777916E70B9700097E8F /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		3400777B16E70BB900097E8F /* VideoDecodeAcceleration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoDecodeAcceleration.framework; path = System/Library/Frameworks/VideoDecodeAcceleration.framework; sourceTree = SDKROOT; };
+		34C363E716EB369A003CEFF1 /* streamOutput.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = streamOutput.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +50,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3400777C16E70BB900097E8F /* VideoDecodeAcceleration.framework in Frameworks */,
+				3400777A16E70B9700097E8F /* CoreVideo.framework in Frameworks */,
+				3400777816E70B9000097E8F /* CoreMedia.framework in Frameworks */,
+				3400777616E70B5100097E8F /* VideoToolbox.framework in Frameworks */,
+				3400777416E70B4400097E8F /* libbz2.dylib in Frameworks */,
+				3400777216E70B3D00097E8F /* libz.dylib in Frameworks */,
 				3400774C16E6E15A00097E8F /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -37,6 +66,13 @@
 		3400773D16E6E15A00097E8F = {
 			isa = PBXGroup;
 			children = (
+				3400777B16E70BB900097E8F /* VideoDecodeAcceleration.framework */,
+				3400777916E70B9700097E8F /* CoreVideo.framework */,
+				3400777716E70B9000097E8F /* CoreMedia.framework */,
+				3400777516E70B5100097E8F /* VideoToolbox.framework */,
+				3400777316E70B4400097E8F /* libbz2.dylib */,
+				3400777116E70B3D00097E8F /* libz.dylib */,
+				3400775D16E6E19900097E8F /* CTHeaders */,
 				3400775116E6E15A00097E8F /* streamOutput */,
 				3400774A16E6E15A00097E8F /* Frameworks */,
 				3400774916E6E15A00097E8F /* Products */,
@@ -73,6 +109,11 @@
 		3400775116E6E15A00097E8F /* streamOutput */ = {
 			isa = PBXGroup;
 			children = (
+				34C363E716EB369A003CEFF1 /* streamOutput.xib */,
+				3400776C16E6ED6F00097E8F /* FFMpegTask.h */,
+				3400776D16E6ED6F00097E8F /* FFMpegTask.m */,
+				3400776116E6E1E800097E8F /* streamOutput.h */,
+				3400776216E6E1E800097E8F /* streamOutput.m */,
 				3400775216E6E15A00097E8F /* Supporting Files */,
 			);
 			path = streamOutput;
@@ -86,6 +127,16 @@
 				3400775716E6E15A00097E8F /* streamOutput-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3400775D16E6E19900097E8F /* CTHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				3400775E16E6E1B700097E8F /* CTUtil.h */,
+				3400775F16E6E1B700097E8F /* CTContext.h */,
+				3400776016E6E1B700097E8F /* CTEffect.h */,
+			);
+			name = CTHeaders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3400775616E6E15A00097E8F /* InfoPlist.strings in Resources */,
+				34C363E816EB369A003CEFF1 /* streamOutput.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +202,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3400776316E6E1E800097E8F /* streamOutput.m in Sources */,
+				3400776E16E6ED6F00097E8F /* FFMpegTask.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,8 +280,18 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "streamOutput/streamOutput-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/local/include;
 				INFOPLIST_FILE = "streamOutput/streamOutput-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					/usr/local/lib/libmp3lame.a,
+					/usr/local/lib/libavcodec.a,
+					/usr/local/lib/libavformat.a,
+					/usr/local/lib/libavutil.a,
+					"-flat_namespace",
+					"-undefined",
+					suppress,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -239,8 +303,18 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "streamOutput/streamOutput-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/local/include;
 				INFOPLIST_FILE = "streamOutput/streamOutput-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					/usr/local/lib/libmp3lame.a,
+					/usr/local/lib/libavcodec.a,
+					/usr/local/lib/libavformat.a,
+					/usr/local/lib/libavutil.a,
+					"-flat_namespace",
+					"-undefined",
+					suppress,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -265,6 +339,7 @@
 				3400775C16E6E15A00097E8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
