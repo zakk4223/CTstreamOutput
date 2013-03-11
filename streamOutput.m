@@ -56,6 +56,8 @@
 
 - (void) initStreamer
 {
+ 
+    //self.audioCaptureDevices = [[NSArray alloc] init];
     
     self.startEnabled = YES;
     
@@ -77,6 +79,8 @@
         
     
     self.audioCaptureDevices = [AVCaptureDevice devicesWithMediaType:AVMediaTypeAudio];
+    //[[self mutableArrayValueForKey:@"audioCaptureDevices"] setArray:[AVCaptureDevice devicesWithMediaType:AVMediaTypeAudio]];
+    
     
     
     
@@ -92,7 +96,7 @@
 
 - (id) initWithContext:(CTContext *) ctContext
 {
-
+    
     self = [super initWithContext:ctContext];
     [self initStreamer];
     return self;
@@ -157,6 +161,10 @@ void PixelBufferRelease( void *releaseRefCon, const void *baseAddress )
 - (void) doit
 {
     
+    if (self.mode != CTEffectInProgram)
+    {
+        return;
+    }
     
     
     if (self.connected == NO)

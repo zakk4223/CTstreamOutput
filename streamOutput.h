@@ -44,7 +44,7 @@ void VideoCompressorReceiveFrame(void *, void *, OSStatus , VTEncodeInfoFlags , 
 @property (assign) BOOL connected;
 @property (assign) BOOL startEnabled;
 @property (strong) AVCaptureDevice *selectedAudioCapture;
-@property (weak) NSArray *audioCaptureDevices;
+@property (strong) NSArray *audioCaptureDevices;
 @property (assign) int audioBitrate;
 
 
